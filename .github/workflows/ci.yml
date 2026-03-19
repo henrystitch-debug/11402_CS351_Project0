@@ -1,0 +1,36 @@
+name: Build and Test – Two Sum
+
+# ── Triggers ──────────────────────────────────────────────────────────────────
+# The workflow runs automatically on every push and every pull request
+# that targets the main (or master) branch.
+on:
+  push:
+    branches: [ "main", "master" ]
+  pull_request:
+    branches: [ "main", "master" ]
+
+# ── Jobs ──────────────────────────────────────────────────────────────────────
+jobs:
+  build-and-test:
+    name: Build & Run Tests
+    # GitHub will spin up a fresh Ubuntu virtual machine for each run.
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Check out the repository so the workflow can access your files.
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # 2. Make sure GCC is available (it is pre-installed on ubuntu-latest,
+      #    but this step makes the dependency explicit and easy to change).
+      - name: Install GCC
+        run: sudo apt-get install -y gcc
+
+      # 3. Compile the main program to verify it builds without errors.
+      - name: Build main program
+        run: make build
+
+      # 4. Compile the test binary and execute all test cases.
+      #    The step fails automatically if any test returns a non-zero exit code.
+      - name: Run test suite
+        run: make test
