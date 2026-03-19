@@ -128,7 +128,7 @@ int main(void)
         RUN_LOOP("Dup [3,3]→6",   h, 6, 0, 1);
         RUN_HASH("Dup [3,3]→6",   h, 6, 0, 1);
 
-        int i[] = {1, 5, 5, 9};
+        int i[] = {3, 5, 5, 9};
         RUN_LOOP("Dup [5,5]→10",  i, 10, 1, 2);
         RUN_HASH("Dup [5,5]→10",  i, 10, 1, 2);
     }
