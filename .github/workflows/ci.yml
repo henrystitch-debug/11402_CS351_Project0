@@ -29,8 +29,10 @@ jobs:
       # 3. Compile the main program to verify it builds without errors.
       - name: Build main program
         run: make build
+        working-directory: ./src
 
       # 4. Compile the test binary and execute all test cases.
       #    The step fails automatically if any test returns a non-zero exit code.
       - name: Run test suite
         run: make test
+        working-directory: ./src
