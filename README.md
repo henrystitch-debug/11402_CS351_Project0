@@ -9,3 +9,7 @@ This project implements a solution to the classic Two Sum problem, a fundamental
 - Understand and implement array searching algorithms
 - Explore time and space complexity trade-offs
 - Practice problem-solving with hash maps/dictionaries
+
+## Explanation 
+
+- To get more details and an overview the docs should be read.
