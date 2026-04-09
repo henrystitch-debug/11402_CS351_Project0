@@ -12,4 +12,4 @@ This project implements a solution to the classic Two Sum problem, a fundamental
 
 ## Explanation 
 
-- To get more details and an overview the docs should be read.
+- More details can be found in the docs.
