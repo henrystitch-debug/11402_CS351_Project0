@@ -1,5 +1,0 @@
-C:/Users/olivi/Gitrepo/11402_CS351_Project0/build/CMakeFiles/two_sum.dir
-C:/Users/olivi/Gitrepo/11402_CS351_Project0/build/CMakeFiles/test_two_sum.dir
-C:/Users/olivi/Gitrepo/11402_CS351_Project0/build/CMakeFiles/test.dir
-C:/Users/olivi/Gitrepo/11402_CS351_Project0/build/CMakeFiles/edit_cache.dir
-C:/Users/olivi/Gitrepo/11402_CS351_Project0/build/CMakeFiles/rebuild_cache.dir
