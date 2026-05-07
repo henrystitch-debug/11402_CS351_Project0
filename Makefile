@@ -9,8 +9,8 @@ all: build
 ## Build the main program
 build: two_sum
 
-two_sum: two_sum.c
-	$(CC) $(CFLAGS) -o two_sum two_sum.c
+two_sum: two_sum.c test_two_sum.c
+	$(CC) $(CFLAGS) -o two_sum two_sum.c test_two_sum.c
 
 ## Build and run all tests
 test: test_two_sum

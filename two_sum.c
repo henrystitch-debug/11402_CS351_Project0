@@ -57,32 +57,3 @@ int *twoSumHashMap(int *nums, int numsSize, int target, int *returnSize)
     return NULL;
 }
 
-// ── main (skipped when building the test binary) ─────────────────────────────
-#ifndef TESTING
-int main(void)
-{
-    int numbers[] = {3, 7, 12, 19};
-    int target    = 19;
-    int returnSize;
-
-    // Loop approach
-    int *result = twoSumLoop(numbers, 4, target, &returnSize);
-    if (result != NULL) {
-        printf("Loop  – Indices: [%d, %d]\n", result[0], result[1]);
-        free(result);
-    } else {
-        printf("Loop  – Keine Lösung gefunden.\n");
-    }
-
-    // Hash map approach
-    int *result2 = twoSumHashMap(numbers, 4, target, &returnSize);
-    if (result2 != NULL) {
-        printf("Hash  – Indices: [%d, %d]\n", result2[0], result2[1]);
-        free(result2);
-    } else {
-        printf("Hash  – Keine Lösung gefunden.\n");
-    }
-
-    return 0;
-}
-#endif
