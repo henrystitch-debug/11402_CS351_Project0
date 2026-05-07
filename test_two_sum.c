@@ -10,7 +10,7 @@ int *twoSumHashMap(int *nums, int numsSize, int target, int *returnSize);
 static int tests_run    = 0;
 static int tests_passed = 0;
 
-/* Check that result[0]==expA and result[1]==expB (or the swapped pair). */
+/* Check that result[0]==expA and result[1]==expB (or the swapped pair) */
 static void check(const char *label, int *result, int returnSize,
                   int expA, int expB)
 {
@@ -32,7 +32,7 @@ static void check(const char *label, int *result, int returnSize,
     free(result);
 }
 
-/* Check that no solution is found. */
+/* Check that no solution is found */
 static void check_null(const char *label, int *result, int returnSize)
 {
     tests_run++;
