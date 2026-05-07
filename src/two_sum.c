@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <two_sum.h>
 
 // ── Two Sum – Loop Approach ───────────────────────────────────────────────────
 int *twoSumLoop(int *nums, int numsSize, int target, int *returnSize)

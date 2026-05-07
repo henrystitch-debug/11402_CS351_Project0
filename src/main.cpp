@@ -1,1 +1,0 @@
-// main program to call the two sum function 

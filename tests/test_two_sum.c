@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <two_sum.h>
 
 // ── Forward declarations ──────────────────────────────────────────────────────
 int *twoSumLoop(int *nums, int numsSize, int target, int *returnSize);
