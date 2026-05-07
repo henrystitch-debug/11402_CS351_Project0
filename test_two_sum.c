@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 // ── Forward declarations ──────────────────────────────────────────────────────
 int *twoSumLoop(int *nums, int numsSize, int target, int *returnSize);
@@ -140,6 +141,36 @@ int main(void)
         RUN_LOOP_NULL("NoSol target=100", j, 100);
         RUN_HASH_NULL("NoSol target=100", j, 100);
     }
+
+    // ── 6. Performance comparison (large array, worst-case placement) ─────────────
+printf("\n--- Performance comparison (n=50000, answer at end) ---\n");
+{
+    int size = 50000;
+    int *big = malloc(size * sizeof(int));
+    for (int i = 0; i < size; i++) big[i] = i + 1;
+    int target = big[size - 2] + big[size - 1]; 
+
+    struct timespec t0, t1;
+
+    clock_gettime(CLOCK_MONOTONIC, &t0);
+    int rs1 = 0;
+    int *r1 = twoSumLoop(big, size, target, &rs1);
+    clock_gettime(CLOCK_MONOTONIC, &t1);
+    double loop_ms = (t1.tv_sec - t0.tv_sec) * 1000.0 + (t1.tv_nsec - t0.tv_nsec) / 1e6;
+    printf("  twoSumLoop:    %.2f ms  (indices [%d, %d])\n", loop_ms, r1[0], r1[1]);
+    free(r1);
+
+    clock_gettime(CLOCK_MONOTONIC, &t0);
+    int rs2 = 0;
+    int *r2 = twoSumHashMap(big, size, target, &rs2);
+    clock_gettime(CLOCK_MONOTONIC, &t1);
+    double hash_ms = (t1.tv_sec - t0.tv_sec) * 1000.0 + (t1.tv_nsec - t0.tv_nsec) / 1e6;
+    printf("  twoSumHashMap: %.2f ms  (indices [%d, %d])\n", hash_ms, r2[0], r2[1]);
+    free(r2);
+
+    printf("  --> Hash is %.1fx faster\n", loop_ms / hash_ms);
+    free(big);
+}
 
     // ── Summary ───────────────────────────────────────────────────────────────
     printf("\n=== Results: %d / %d passed ===\n", tests_passed, tests_run);
