@@ -1,0 +1,7 @@
+# ninja log v7
+20	243	7998413463301456	CMakeFiles/two_sum.dir/src/two_sum.c.obj	156565083e98bb91
+51	246	7998413463632509	CMakeFiles/test_two_sum.dir/src/two_sum.c.obj	a3a5648fb934719
+73	275	7998413463853534	CMakeFiles/test_two_sum.dir/tests/test_two_sum.c.obj	d18f40a501c33542
+11	203	7998413908451125	test_two_sum.exe	5e88b88ab756c8ae
+6	139	7998414773313802	CMakeFiles/two_sum.dir/src/main.c.obj	d1562c5fae0ae341
+140	307	7998414774649614	two_sum.exe	c2815f31218d0713
