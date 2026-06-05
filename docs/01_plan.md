@@ -9,12 +9,12 @@ This document outlines the strategy, timeline, and milestones for developing a s
 - Deliver clean, well-documented code
 
 ## Timeline
-| Phase | Duration | Deliverable |
-|-------|----------|-------------|
-| Analysis | Week 1 | Algorithm design and complexity analysis |
-| Implementation | Week 2 | Core solution code |
-| Testing | Week 3 | Unit tests and edge cases |
-| Documentation | Week 4 | Final documentation and review |
+| Phase | Deliverable |
+|-------|-------------|
+| Analysis | Algorithm design and complexity analysis |
+| Implementation | Core solution code |
+| Testing | Unit tests and edge cases |
+| Documentation | Final documentation and review |
 
 ## Milestones
 - [ ] Algorithm research and selection
@@ -24,15 +24,13 @@ This document outlines the strategy, timeline, and milestones for developing a s
 - [ ] Final submission
 
 ## Resources
-- Development environment: Python/Java/C++
-- Testing framework: pytest/JUnit/gtest
+- Development environment: C
 - Version control: Git
 
 ## Approach
-1. Research optimal solutions (hash map, two-pointer techniques)
+1. Research optimal solutions (hash map, loop)
 2. Implement solution with O(n) time complexity
 3. Create comprehensive test cases
-4. Document all decisions and trade-offs
 
 ## Success Criteria
 - Algorithm runs in linear time
