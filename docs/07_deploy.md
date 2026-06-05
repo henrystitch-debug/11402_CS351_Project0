@@ -8,34 +8,16 @@ This document outlines the deployment process for the Two Sum solution, includin
 ## Environment Setup
 
 ### Prerequisites
-- Python 3.8 or higher
-- pip package manager
+- C installed
 - Git
 
 ### Installation
 
-1. Clone the repository:
+Clone the repository:
 ```bash
 git clone <https://github.com/henrystitch-debug/11402_CS351_Project0.git>
 cd 11402_CS351_Project0
 ```
-
-2. Create a virtual environment:
-```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-```
-
-3. Install (future, not yet) dependencies:
-```bash
-pip install -r requirements.txt
-```
-
-## Configuration
-
-- Configure environment variables in `.env` file
-- Set API keys and database credentials as needed
-- Review `config.py` for application settings
 
 ## Deployment Checklist
 
