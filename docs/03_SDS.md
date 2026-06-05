@@ -14,15 +14,13 @@ This document describes the architecture and design for solving the Two Sum prob
 
 ## 3. Design Patterns
 
+### 3.2 Loop Approach
+- **Pattern**: Loop-each-number
+- **Time Complexity**: O(n²)
+
 ### 3.1 Hash Map Approach (Recommended)
 - **Pattern**: Single-pass hash lookup
 - **Time Complexity**: O(n)
-- **Space Complexity**: O(n)
-
-### 3.2 Two Pointer Approach
-- **Pattern**: Sort-then-search
-- **Time Complexity**: O(n log n)
-- **Space Complexity**: O(1) or O(n)
 
 ## 4. Data Structures
 
@@ -40,6 +38,5 @@ This document describes the architecture and design for solving the Two Sum prob
 
 ## 6. Technical Implementation Details
 
-- Language: [Specify language]
-- Dependencies: None required
+- Language: C
 - Error Handling: Validate array size and null inputs
